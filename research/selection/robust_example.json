@@ -1,0 +1,105 @@
+{
+  "feasible": [
+    "Shewhart",
+    "CUSUM",
+    "GLR16"
+  ],
+  "unresolved": [
+    "RankRestart"
+  ],
+  "infeasible": [],
+  "choice": "GLR16",
+  "unique_best": true,
+  "inferior_to_choice": [
+    "Shewhart",
+    "CUSUM",
+    "RankRestart"
+  ],
+  "candidate_optimum_interval": [
+    0.3591231055318847,
+    0.3947723819783009
+  ],
+  "candidate_excess_upper": 0.0,
+  "admissible_excess_upper": 0.3947723819783009,
+  "status": "certified feasible selection",
+  "outer_pareto": [
+    "Shewhart",
+    "CUSUM",
+    "GLR16",
+    "RankRestart"
+  ],
+  "dominance_witnesses": {},
+  "intervals": {
+    "Shewhart": {
+      "fa": [
+        0.00792132430520884,
+        0.01582939109630136
+      ],
+      "miss": [
+        0.9193948552861183,
+        0.9383054123237214
+      ],
+      "risk": [
+        0.9196599814823216,
+        0.9385398126341977
+      ]
+    },
+    "CUSUM": {
+      "fa": [
+        0.007506940640105543,
+        0.015244966101738793
+      ],
+      "miss": [
+        0.9302949448197964,
+        0.9478858629477395
+      ],
+      "risk": [
+        0.9302060609207621,
+        0.9478082388254935
+      ]
+    },
+    "GLR16": {
+      "fa": [
+        0.008755676470299094,
+        0.01699270070691305
+      ],
+      "miss": [
+        0.3386034015932142,
+        0.37383064602661725
+      ],
+      "risk": [
+        0.3591231055318847,
+        0.3947723819783009
+      ]
+    },
+    "RankRestart": {
+      "fa": [
+        0.009175423527191254,
+        0.017571804065367423
+      ],
+      "miss": [
+        0.9982360798466793,
+        0.9999715826471812
+      ],
+      "risk": [
+        0.9832974696379012,
+        0.9914535737426233
+      ]
+    }
+  },
+  "cost_slots": {
+    "Shewhart": 0,
+    "CUSUM": 2,
+    "GLR16": 17,
+    "RankRestart": 85
+  },
+  "strata": [
+    "moderate persistent",
+    "brief pulse"
+  ],
+  "objective": "worst stratum physical hazard",
+  "budgets": {
+    "fa": 0.02,
+    "risk": 0.99
+  }
+}

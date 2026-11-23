@@ -1,0 +1,145 @@
+scenario,fa_cap,hazard_cap,slot_cap,inner,outer,choice,status,excess_upper
+weak persistent,0.005,0.12,2,,,,no feasible candidate,
+weak persistent,0.005,0.6,2,,,,no feasible candidate,
+weak persistent,0.005,0.12,250,,,,no feasible candidate,
+weak persistent,0.005,0.6,250,,,,no feasible candidate,
+weak persistent,0.02,0.12,2,,,,no feasible candidate,
+weak persistent,0.02,0.6,2,,,,no feasible candidate,
+weak persistent,0.02,0.12,250,,,,no feasible candidate,
+weak persistent,0.02,0.6,250,,,,no feasible candidate,
+weak persistent,0.08,0.12,2,,,,no feasible candidate,
+weak persistent,0.08,0.6,2,,,,no feasible candidate,
+weak persistent,0.08,0.12,250,,,,no feasible candidate,
+weak persistent,0.08,0.6,250,,,,no feasible candidate,
+moderate persistent,0.005,0.12,2,,,,no feasible candidate,
+moderate persistent,0.005,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+moderate persistent,0.005,0.12,250,,,,no feasible candidate,
+moderate persistent,0.005,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+moderate persistent,0.02,0.12,2,,,,no feasible candidate,
+moderate persistent,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+moderate persistent,0.02,0.12,250,,,,no feasible candidate,
+moderate persistent,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+moderate persistent,0.08,0.12,2,,CUSUM,,uncertain feasibility,
+moderate persistent,0.08,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+moderate persistent,0.08,0.12,250,,CUSUM,,uncertain feasibility,
+moderate persistent,0.08,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+negative persistent,0.005,0.12,2,,,,no feasible candidate,
+negative persistent,0.005,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+negative persistent,0.005,0.12,250,,,,no feasible candidate,
+negative persistent,0.005,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+negative persistent,0.02,0.12,2,,,,no feasible candidate,
+negative persistent,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+negative persistent,0.02,0.12,250,,,,no feasible candidate,
+negative persistent,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+negative persistent,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+negative persistent,0.08,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+negative persistent,0.08,0.12,250,CUSUM,CUSUM,CUSUM,unique certified,0
+negative persistent,0.08,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+slow ramp,0.005,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+slow ramp,0.005,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+slow ramp,0.005,0.12,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,ordering unresolved,0.0012657484254202836
+slow ramp,0.005,0.6,250,"CUSUM,GLR16","CUSUM,GLR16,RankRestart",CUSUM,ordering unresolved,0.0012657484254202836
+slow ramp,0.02,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+slow ramp,0.02,0.6,2,"Shewhart,CUSUM","Shewhart,CUSUM",CUSUM,unique certified,0
+slow ramp,0.02,0.12,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,ordering unresolved,0.0008636153096043522
+slow ramp,0.02,0.6,250,"Shewhart,CUSUM,GLR16,RankRestart","Shewhart,CUSUM,GLR16,RankRestart",CUSUM,ordering unresolved,0.0008636153096043522
+slow ramp,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+slow ramp,0.08,0.6,2,"Shewhart,CUSUM","Shewhart,CUSUM",CUSUM,unique certified,0
+slow ramp,0.08,0.12,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,ordering unresolved,0.0008230904861010168
+slow ramp,0.08,0.6,250,"Shewhart,CUSUM,GLR16,RankRestart","Shewhart,CUSUM,GLR16,RankRestart",CUSUM,ordering unresolved,0.0008230904861010168
+brief pulse,0.005,0.12,2,,,,no feasible candidate,
+brief pulse,0.005,0.6,2,Shewhart,Shewhart,Shewhart,unique certified,0
+brief pulse,0.005,0.12,250,,,,no feasible candidate,
+brief pulse,0.005,0.6,250,Shewhart,"Shewhart,GLR16",Shewhart,unique certified,0
+brief pulse,0.02,0.12,2,,,,no feasible candidate,
+brief pulse,0.02,0.6,2,Shewhart,Shewhart,Shewhart,unique certified,0
+brief pulse,0.02,0.12,250,,,,no feasible candidate,
+brief pulse,0.02,0.6,250,"Shewhart,GLR16","Shewhart,GLR16",Shewhart,unique certified,0
+brief pulse,0.08,0.12,2,,,,no feasible candidate,
+brief pulse,0.08,0.6,2,Shewhart,Shewhart,Shewhart,unique certified,0
+brief pulse,0.08,0.12,250,,,,no feasible candidate,
+brief pulse,0.08,0.6,250,"Shewhart,GLR16","Shewhart,GLR16",Shewhart,unique certified,0
+transient drift,0.005,0.12,2,,,,no feasible candidate,
+transient drift,0.005,0.6,2,,CUSUM,,uncertain feasibility,
+transient drift,0.005,0.12,250,,,,no feasible candidate,
+transient drift,0.005,0.6,250,,"CUSUM,GLR16",,uncertain feasibility,
+transient drift,0.02,0.12,2,,,,no feasible candidate,
+transient drift,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+transient drift,0.02,0.12,250,,,,no feasible candidate,
+transient drift,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,ordering unresolved,0.006954619957179088
+transient drift,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+transient drift,0.08,0.6,2,CUSUM,"Shewhart,CUSUM",CUSUM,unique certified,0
+transient drift,0.08,0.12,250,CUSUM,"CUSUM,GLR16",CUSUM,unique certified,0
+transient drift,0.08,0.6,250,"CUSUM,GLR16","Shewhart,CUSUM,GLR16",CUSUM,unique certified,0
+correlated,0.005,0.12,2,,,,no feasible candidate,
+correlated,0.005,0.6,2,,,,no feasible candidate,
+correlated,0.005,0.12,250,,,,no feasible candidate,
+correlated,0.005,0.6,250,,,,no feasible candidate,
+correlated,0.02,0.12,2,,,,no feasible candidate,
+correlated,0.02,0.6,2,,,,no feasible candidate,
+correlated,0.02,0.12,250,,,,no feasible candidate,
+correlated,0.02,0.6,250,,,,no feasible candidate,
+correlated,0.08,0.12,2,,,,no feasible candidate,
+correlated,0.08,0.6,2,,,,no feasible candidate,
+correlated,0.08,0.12,250,,,,no feasible candidate,
+correlated,0.08,0.6,250,,,,no feasible candidate,
+short reference,0.005,0.12,2,,,,no feasible candidate,
+short reference,0.005,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+short reference,0.005,0.12,250,,,,no feasible candidate,
+short reference,0.005,0.6,250,CUSUM,"CUSUM,GLR16",CUSUM,unique certified,0
+short reference,0.02,0.12,2,,,,no feasible candidate,
+short reference,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+short reference,0.02,0.12,250,,,,no feasible candidate,
+short reference,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+short reference,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+short reference,0.08,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+short reference,0.08,0.12,250,CUSUM,CUSUM,CUSUM,unique certified,0
+short reference,0.08,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+long reference,0.005,0.12,2,,,,no feasible candidate,
+long reference,0.005,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+long reference,0.005,0.12,250,,,,no feasible candidate,
+long reference,0.005,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+long reference,0.02,0.12,2,,,,no feasible candidate,
+long reference,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+long reference,0.02,0.12,250,,,,no feasible candidate,
+long reference,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+long reference,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+long reference,0.08,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+long reference,0.08,0.12,250,CUSUM,CUSUM,CUSUM,unique certified,0
+long reference,0.08,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+late onset,0.005,0.12,2,,,,no feasible candidate,
+late onset,0.005,0.6,2,,CUSUM,,uncertain feasibility,
+late onset,0.005,0.12,250,,,,no feasible candidate,
+late onset,0.005,0.6,250,,"CUSUM,GLR16",,uncertain feasibility,
+late onset,0.02,0.12,2,,,,no feasible candidate,
+late onset,0.02,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+late onset,0.02,0.12,250,,,,no feasible candidate,
+late onset,0.02,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+late onset,0.08,0.12,2,CUSUM,CUSUM,CUSUM,unique certified,0
+late onset,0.08,0.6,2,CUSUM,CUSUM,CUSUM,unique certified,0
+late onset,0.08,0.12,250,CUSUM,CUSUM,CUSUM,unique certified,0
+late onset,0.08,0.6,250,"CUSUM,GLR16","CUSUM,GLR16",CUSUM,unique certified,0
+slow response,0.005,0.12,2,,,,no feasible candidate,
+slow response,0.005,0.6,2,,,,no feasible candidate,
+slow response,0.005,0.12,250,,,,no feasible candidate,
+slow response,0.005,0.6,250,,,,no feasible candidate,
+slow response,0.02,0.12,2,,,,no feasible candidate,
+slow response,0.02,0.6,2,,,,no feasible candidate,
+slow response,0.02,0.12,250,,,,no feasible candidate,
+slow response,0.02,0.6,250,,,,no feasible candidate,
+slow response,0.08,0.12,2,,,,no feasible candidate,
+slow response,0.08,0.6,2,,,,no feasible candidate,
+slow response,0.08,0.12,250,,,,no feasible candidate,
+slow response,0.08,0.6,250,,,,no feasible candidate,
+shifted healthy law,0.005,0.12,2,,,,no feasible candidate,
+shifted healthy law,0.005,0.6,2,,,,no feasible candidate,
+shifted healthy law,0.005,0.12,250,,,,no feasible candidate,
+shifted healthy law,0.005,0.6,250,,,,no feasible candidate,
+shifted healthy law,0.02,0.12,2,,,,no feasible candidate,
+shifted healthy law,0.02,0.6,2,,,,no feasible candidate,
+shifted healthy law,0.02,0.12,250,,,,no feasible candidate,
+shifted healthy law,0.02,0.6,250,,,,no feasible candidate,
+shifted healthy law,0.08,0.12,2,,,,no feasible candidate,
+shifted healthy law,0.08,0.6,2,,,,no feasible candidate,
+shifted healthy law,0.08,0.12,250,,,,no feasible candidate,
+shifted healthy law,0.08,0.6,250,,,,no feasible candidate,

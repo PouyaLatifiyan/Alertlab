@@ -1,0 +1,5 @@
+quantity,units,value
+max_xyz_from_llh,m,0.00011052958803347947
+max_enu_from_ecef,m/s,3.614624287906422e-15
+median_pre120_velocity_secant_discrepancy,m/s,0.20168152510518422
+max_velocity_secant_discrepancy,m/s,1.0605562286204118

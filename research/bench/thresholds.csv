@@ -1,0 +1,145 @@
+scenario,method,budget,threshold
+weak persistent,Shewhart,0.005,4.120005136524744
+weak persistent,Shewhart,0.02,3.8062917813847745
+weak persistent,Shewhart,0.08,3.4423415960415245
+weak persistent,CUSUM,0.005,9.043978300334999
+weak persistent,CUSUM,0.02,7.690539924912427
+weak persistent,CUSUM,0.08,6.240049537210163
+weak persistent,GLR16,0.005,10.082212548546881
+weak persistent,GLR16,0.02,8.731195471732923
+weak persistent,GLR16,0.08,7.307870417573031
+weak persistent,RankRestart,0.005,0.08595541840760818
+weak persistent,RankRestart,0.02,0.05579800477797375
+weak persistent,RankRestart,0.08,0.032538209800996
+moderate persistent,Shewhart,0.005,4.120005136524744
+moderate persistent,Shewhart,0.02,3.8062917813847745
+moderate persistent,Shewhart,0.08,3.4423415960415245
+moderate persistent,CUSUM,0.005,9.043978300334999
+moderate persistent,CUSUM,0.02,7.690539924912427
+moderate persistent,CUSUM,0.08,6.240049537210163
+moderate persistent,GLR16,0.005,10.082212548546881
+moderate persistent,GLR16,0.02,8.731195471732923
+moderate persistent,GLR16,0.08,7.307870417573031
+moderate persistent,RankRestart,0.005,0.08595541840760818
+moderate persistent,RankRestart,0.02,0.05579800477797375
+moderate persistent,RankRestart,0.08,0.032538209800996
+negative persistent,Shewhart,0.005,4.120005136524744
+negative persistent,Shewhart,0.02,3.8062917813847745
+negative persistent,Shewhart,0.08,3.4423415960415245
+negative persistent,CUSUM,0.005,9.043978300334999
+negative persistent,CUSUM,0.02,7.690539924912427
+negative persistent,CUSUM,0.08,6.240049537210163
+negative persistent,GLR16,0.005,10.082212548546881
+negative persistent,GLR16,0.02,8.731195471732923
+negative persistent,GLR16,0.08,7.307870417573031
+negative persistent,RankRestart,0.005,0.08595541840760818
+negative persistent,RankRestart,0.02,0.05579800477797375
+negative persistent,RankRestart,0.08,0.032538209800996
+slow ramp,Shewhart,0.005,4.120005136524744
+slow ramp,Shewhart,0.02,3.8062917813847745
+slow ramp,Shewhart,0.08,3.4423415960415245
+slow ramp,CUSUM,0.005,9.043978300334999
+slow ramp,CUSUM,0.02,7.690539924912427
+slow ramp,CUSUM,0.08,6.240049537210163
+slow ramp,GLR16,0.005,10.082212548546881
+slow ramp,GLR16,0.02,8.731195471732923
+slow ramp,GLR16,0.08,7.307870417573031
+slow ramp,RankRestart,0.005,0.08595541840760818
+slow ramp,RankRestart,0.02,0.05579800477797375
+slow ramp,RankRestart,0.08,0.032538209800996
+brief pulse,Shewhart,0.005,4.120005136524744
+brief pulse,Shewhart,0.02,3.8062917813847745
+brief pulse,Shewhart,0.08,3.4423415960415245
+brief pulse,CUSUM,0.005,9.043978300334999
+brief pulse,CUSUM,0.02,7.690539924912427
+brief pulse,CUSUM,0.08,6.240049537210163
+brief pulse,GLR16,0.005,10.082212548546881
+brief pulse,GLR16,0.02,8.731195471732923
+brief pulse,GLR16,0.08,7.307870417573031
+brief pulse,RankRestart,0.005,0.08595541840760818
+brief pulse,RankRestart,0.02,0.05579800477797375
+brief pulse,RankRestart,0.08,0.032538209800996
+transient drift,Shewhart,0.005,4.120005136524744
+transient drift,Shewhart,0.02,3.8062917813847745
+transient drift,Shewhart,0.08,3.4423415960415245
+transient drift,CUSUM,0.005,9.043978300334999
+transient drift,CUSUM,0.02,7.690539924912427
+transient drift,CUSUM,0.08,6.240049537210163
+transient drift,GLR16,0.005,10.082212548546881
+transient drift,GLR16,0.02,8.731195471732923
+transient drift,GLR16,0.08,7.307870417573031
+transient drift,RankRestart,0.005,0.08595541840760818
+transient drift,RankRestart,0.02,0.05579800477797375
+transient drift,RankRestart,0.08,0.032538209800996
+correlated,Shewhart,0.005,4.137992932428048
+correlated,Shewhart,0.02,3.8236222582379114
+correlated,Shewhart,0.08,3.432606266391274
+correlated,CUSUM,0.005,30.426523928911177
+correlated,CUSUM,0.02,24.98997906104679
+correlated,CUSUM,0.08,19.7938851274186
+correlated,GLR16,0.005,32.59846188585627
+correlated,GLR16,0.02,26.34590140721087
+correlated,GLR16,0.08,20.162859211137526
+correlated,RankRestart,0.005,0.7650988964680981
+correlated,RankRestart,0.02,0.37711625671150245
+correlated,RankRestart,0.08,0.14179887865584373
+short reference,Shewhart,0.005,4.140381707773853
+short reference,Shewhart,0.02,3.8191144886272372
+short reference,Shewhart,0.08,3.4561471203859626
+short reference,CUSUM,0.005,8.997203909826228
+short reference,CUSUM,0.02,7.628311582704413
+short reference,CUSUM,0.08,6.252577161855582
+short reference,GLR16,0.005,9.979758405059757
+short reference,GLR16,0.02,8.688878241167803
+short reference,GLR16,0.08,7.295576553832174
+short reference,RankRestart,0.005,0.022747631489571263
+short reference,RankRestart,0.02,0.0162961749513392
+short reference,RankRestart,0.08,0.010123643689796841
+long reference,Shewhart,0.005,4.128616303931848
+long reference,Shewhart,0.02,3.7730386304115724
+long reference,Shewhart,0.08,3.43509322982537
+long reference,CUSUM,0.005,8.926989576793515
+long reference,CUSUM,0.02,7.65643509385151
+long reference,CUSUM,0.08,6.292214554098841
+long reference,GLR16,0.005,10.12558109621416
+long reference,GLR16,0.02,8.697148181745511
+long reference,GLR16,0.08,7.283639836302343
+long reference,RankRestart,0.005,0.3042574110926495
+long reference,RankRestart,0.02,0.1734821046089533
+long reference,RankRestart,0.08,0.0864625916266525
+late onset,Shewhart,0.005,4.120005136524744
+late onset,Shewhart,0.02,3.8062917813847745
+late onset,Shewhart,0.08,3.4423415960415245
+late onset,CUSUM,0.005,9.043978300334999
+late onset,CUSUM,0.02,7.690539924912427
+late onset,CUSUM,0.08,6.240049537210163
+late onset,GLR16,0.005,10.082212548546881
+late onset,GLR16,0.02,8.731195471732923
+late onset,GLR16,0.08,7.307870417573031
+late onset,RankRestart,0.005,0.08595541840760818
+late onset,RankRestart,0.02,0.05579800477797375
+late onset,RankRestart,0.08,0.032538209800996
+slow response,Shewhart,0.005,4.120005136524744
+slow response,Shewhart,0.02,3.8062917813847745
+slow response,Shewhart,0.08,3.4423415960415245
+slow response,CUSUM,0.005,9.043978300334999
+slow response,CUSUM,0.02,7.690539924912427
+slow response,CUSUM,0.08,6.240049537210163
+slow response,GLR16,0.005,10.082212548546881
+slow response,GLR16,0.02,8.731195471732923
+slow response,GLR16,0.08,7.307870417573031
+slow response,RankRestart,0.005,0.08595541840760818
+slow response,RankRestart,0.02,0.05579800477797375
+slow response,RankRestart,0.08,0.032538209800996
+shifted healthy law,Shewhart,0.005,4.120005136524744
+shifted healthy law,Shewhart,0.02,3.8062917813847745
+shifted healthy law,Shewhart,0.08,3.4423415960415245
+shifted healthy law,CUSUM,0.005,9.043978300334999
+shifted healthy law,CUSUM,0.02,7.690539924912427
+shifted healthy law,CUSUM,0.08,6.240049537210163
+shifted healthy law,GLR16,0.005,10.082212548546881
+shifted healthy law,GLR16,0.02,8.731195471732923
+shifted healthy law,GLR16,0.08,7.307870417573031
+shifted healthy law,RankRestart,0.005,0.08595541840760818
+shifted healthy law,RankRestart,0.02,0.05579800477797375
+shifted healthy law,RankRestart,0.08,0.032538209800996

@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ALERT Lab mission histories v1",
+  "anyOf": [
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "required": [
+          "mission_id",
+          "scenario",
+          "monitor",
+          "cohort",
+          "time_s",
+          "horizon_s",
+          "observation_status",
+          "alarm",
+          "source"
+        ],
+        "properties": {
+          "mission_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scenario": {
+            "type": "string",
+            "minLength": 1
+          },
+          "monitor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cohort": {
+            "enum": [
+              "healthy",
+              "changed"
+            ]
+          },
+          "time_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "horizon_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "observation_status": {
+            "enum": [
+              "valid",
+              "missing"
+            ]
+          },
+          "alarm": {
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "onset_s": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "deadline_s": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "need": {
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          },
+          "hazard": {
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          },
+          "cost_slots": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "dispatch": {
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          },
+          "response_complete": {
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          },
+          "x_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "y_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "z_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "vx_mps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "vy_mps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "vz_mps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ref_x_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ref_y_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ref_z_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "measurement": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "frame": {
+            "enum": [
+              "ENU",
+              "ECEF",
+              null
+            ]
+          },
+          "missed_window": {
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "rows"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100000,
+          "items": {
+            "type": "object",
+            "required": [
+              "mission_id",
+              "scenario",
+              "monitor",
+              "cohort",
+              "time_s",
+              "horizon_s",
+              "observation_status",
+              "alarm",
+              "source"
+            ],
+            "properties": {
+              "mission_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scenario": {
+                "type": "string",
+                "minLength": 1
+              },
+              "monitor": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cohort": {
+                "enum": [
+                  "healthy",
+                  "changed"
+                ]
+              },
+              "time_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "horizon_s": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "observation_status": {
+                "enum": [
+                  "valid",
+                  "missing"
+                ]
+              },
+              "alarm": {
+                "enum": [
+                  0,
+                  1
+                ]
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "onset_s": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "deadline_s": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "need": {
+                "enum": [
+                  0,
+                  1,
+                  null
+                ]
+              },
+              "hazard": {
+                "enum": [
+                  0,
+                  1,
+                  null
+                ]
+              },
+              "cost_slots": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "dispatch": {
+                "enum": [
+                  0,
+                  1,
+                  null
+                ]
+              },
+              "response_complete": {
+                "enum": [
+                  0,
+                  1,
+                  null
+                ]
+              },
+              "x_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "y_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "z_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "vx_mps": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "vy_mps": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "vz_mps": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ref_x_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ref_y_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ref_z_m": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "measurement": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "frame": {
+                "enum": [
+                  "ENU",
+                  "ECEF",
+                  null
+                ]
+              },
+              "missed_window": {
+                "enum": [
+                  0,
+                  1,
+                  null
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

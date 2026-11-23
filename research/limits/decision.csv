@@ -1,0 +1,6 @@
+alpha,selected,candidate_timely,optimal_causal_timely,relaxed_np_timely_upper,candidate_hazard,optimal_hazard,exact_hazard_gap
+1/25,Three consecutive,81/625,83/375,59/125,5521/6250,1001/1250,258/3125
+1/10,Two consecutive,189/625,59/150,73/100,4549/6250,323/500,1023/12500
+1/5,First epoch positive,17/25,17/25,4/5,97/250,97/250,0
+3/10,First epoch positive,17/25,797/1000,171/200,97/250,2827/10000,1053/10000
+1/2,First positive,551/625,283/320,307/320,1291/6250,653/3200,999/400000

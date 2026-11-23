@@ -1,0 +1,127 @@
+contract,budget,monitor,robust_feasible,possible,separate_bound,same_law_bound,tightening,separate_choice,same_law_choice
+one slot per handoff,0.0,Restart,False,False,,,,False,False
+one slot per handoff,0.0,CUSUM,False,False,,,,False,False
+one slot per handoff,0.0,GLR,False,False,,,,False,False
+one slot per handoff,0.05,Restart,False,False,,,,False,False
+one slot per handoff,0.05,CUSUM,False,False,,,,False,False
+one slot per handoff,0.05,GLR,False,False,,,,False,False
+one slot per handoff,0.1,Restart,False,False,,,,False,False
+one slot per handoff,0.1,CUSUM,False,False,,,,False,False
+one slot per handoff,0.1,GLR,False,False,,,,False,False
+one slot per handoff,0.15000000000000002,Restart,False,False,,,,False,False
+one slot per handoff,0.15000000000000002,CUSUM,False,False,,,,False,False
+one slot per handoff,0.15000000000000002,GLR,False,False,,,,False,False
+one slot per handoff,0.2,Restart,False,False,,,,False,False
+one slot per handoff,0.2,CUSUM,False,False,,,,False,False
+one slot per handoff,0.2,GLR,False,False,,,,False,False
+one slot per handoff,0.25,Restart,False,False,,,,False,False
+one slot per handoff,0.25,CUSUM,False,False,,,,False,False
+one slot per handoff,0.25,GLR,False,False,,,,False,False
+one slot per handoff,0.30000000000000004,Restart,False,False,,,,False,False
+one slot per handoff,0.30000000000000004,CUSUM,False,False,,,,False,False
+one slot per handoff,0.30000000000000004,GLR,False,False,,,,False,False
+one slot per handoff,0.35000000000000003,Restart,False,False,,,,False,False
+one slot per handoff,0.35000000000000003,CUSUM,False,False,,,,False,False
+one slot per handoff,0.35000000000000003,GLR,False,False,,,,False,False
+one slot per handoff,0.4,Restart,False,False,,,,False,False
+one slot per handoff,0.4,CUSUM,False,False,,,,False,False
+one slot per handoff,0.4,GLR,False,False,,,,False,False
+one slot per handoff,0.45,Restart,False,False,,,,False,False
+one slot per handoff,0.45,CUSUM,False,False,,,,False,False
+one slot per handoff,0.45,GLR,False,False,,,,False,False
+one slot per handoff,0.5,Restart,False,False,,,,False,False
+one slot per handoff,0.5,CUSUM,False,False,,,,False,False
+one slot per handoff,0.5,GLR,False,False,,,,False,False
+one slot per handoff,0.55,Restart,False,False,,,,False,False
+one slot per handoff,0.55,CUSUM,False,False,,,,False,False
+one slot per handoff,0.55,GLR,False,False,,,,False,False
+one slot per handoff,0.6000000000000001,Restart,False,True,,,,False,False
+one slot per handoff,0.6000000000000001,CUSUM,False,False,,,,False,False
+one slot per handoff,0.6000000000000001,GLR,False,False,,,,False,False
+one slot per handoff,0.65,Restart,False,True,,,,False,False
+one slot per handoff,0.65,CUSUM,False,False,,,,False,False
+one slot per handoff,0.65,GLR,False,False,,,,False,False
+one slot per handoff,0.7000000000000001,Restart,False,True,,,,False,False
+one slot per handoff,0.7000000000000001,CUSUM,False,False,,,,False,False
+one slot per handoff,0.7000000000000001,GLR,False,False,,,,False,False
+one slot per handoff,0.75,Restart,False,True,,,,False,False
+one slot per handoff,0.75,CUSUM,False,False,,,,False,False
+one slot per handoff,0.75,GLR,False,False,,,,False,False
+one slot per handoff,0.8,Restart,False,True,,,,False,False
+one slot per handoff,0.8,CUSUM,False,False,,,,False,False
+one slot per handoff,0.8,GLR,False,False,,,,False,False
+one slot per handoff,0.8500000000000001,Restart,True,True,-0.0,-0.0,0.0,True,True
+one slot per handoff,0.8500000000000001,CUSUM,False,False,,,,False,False
+one slot per handoff,0.8500000000000001,GLR,False,False,,,,False,False
+one slot per handoff,0.9,Restart,True,True,0.44531722993720324,0.31683362419664196,0.12848360574056128,True,True
+one slot per handoff,0.9,CUSUM,False,True,,,,False,False
+one slot per handoff,0.9,GLR,False,True,,,,False,False
+one slot per handoff,0.9500000000000001,Restart,True,True,0.44531722993720324,0.39531722993720336,0.04999999999999988,True,True
+one slot per handoff,0.9500000000000001,CUSUM,False,True,,,,False,False
+one slot per handoff,0.9500000000000001,GLR,False,True,,,,False,False
+one slot per handoff,1.0,Restart,True,True,0.44531722993720324,0.4453172299372033,-5.551115123125783e-17,False,False
+one slot per handoff,1.0,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+one slot per handoff,1.0,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.0,Restart,False,False,,,,False,False
+duration-weighted handoff,0.0,CUSUM,False,False,,,,False,False
+duration-weighted handoff,0.0,GLR,False,False,,,,False,False
+duration-weighted handoff,0.05,Restart,False,False,,,,False,False
+duration-weighted handoff,0.05,CUSUM,False,False,,,,False,False
+duration-weighted handoff,0.05,GLR,False,False,,,,False,False
+duration-weighted handoff,0.1,Restart,False,True,,,,False,False
+duration-weighted handoff,0.1,CUSUM,False,False,,,,False,False
+duration-weighted handoff,0.1,GLR,False,False,,,,False,False
+duration-weighted handoff,0.15000000000000002,Restart,False,True,,,,False,False
+duration-weighted handoff,0.15000000000000002,CUSUM,False,False,,,,False,False
+duration-weighted handoff,0.15000000000000002,GLR,False,False,,,,False,False
+duration-weighted handoff,0.2,Restart,False,True,,,,False,False
+duration-weighted handoff,0.2,CUSUM,False,False,,,,False,False
+duration-weighted handoff,0.2,GLR,False,False,,,,False,False
+duration-weighted handoff,0.25,Restart,True,True,0.4453115864583684,0.2417404817304675,0.20357110472790088,True,True
+duration-weighted handoff,0.25,CUSUM,False,True,,,,False,False
+duration-weighted handoff,0.25,GLR,False,False,,,,False,False
+duration-weighted handoff,0.30000000000000004,Restart,True,True,0.44531722993720324,0.34174048173046745,0.10357674820673579,True,True
+duration-weighted handoff,0.30000000000000004,CUSUM,False,True,,,,False,False
+duration-weighted handoff,0.30000000000000004,GLR,False,True,,,,False,False
+duration-weighted handoff,0.35000000000000003,Restart,True,True,0.44531722993720324,0.4203172299372031,0.025000000000000133,True,True
+duration-weighted handoff,0.35000000000000003,CUSUM,False,True,,,,False,False
+duration-weighted handoff,0.35000000000000003,GLR,False,True,,,,False,False
+duration-weighted handoff,0.4,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.4,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.4,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.45,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.45,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.45,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.5,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.5,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.5,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.55,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.55,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.55,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.6000000000000001,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.6000000000000001,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.6000000000000001,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.65,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.65,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.65,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.7000000000000001,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.7000000000000001,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.7000000000000001,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.75,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.75,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.75,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.8,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.8,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.8,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.8500000000000001,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.8500000000000001,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.8500000000000001,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.9,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.9,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.9,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,0.9500000000000001,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,0.9500000000000001,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,0.9500000000000001,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True
+duration-weighted handoff,1.0,Restart,True,True,0.44531722993720324,0.44531722993720324,0.0,False,False
+duration-weighted handoff,1.0,CUSUM,True,True,0.06746159464501948,0.06746159464501948,0.0,False,False
+duration-weighted handoff,1.0,GLR,True,True,0.04335041752591533,0.04335041752591533,0.0,True,True

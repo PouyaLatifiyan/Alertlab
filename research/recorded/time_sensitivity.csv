@@ -1,0 +1,17 @@
+record,policy,ref_begin,ref_end_inclusive,activate,last_epoch,endpoint,cash,adaptive,restart
+cleanStatic,historical,20,99,110,423,silent,silent,202,silent
+cleanStatic,shifted,21,100,110,423,silent,silent,200,silent
+cleanStatic,common,20,99,110,410,silent,silent,202,silent
+cleanStatic,common_shifted,21,100,110,410,silent,silent,200,silent
+ds2,historical,20,99,115,420,136,154,140,151
+ds2,shifted,21,100,115,420,136,154,140,151
+ds2,common,20,99,110,410,131,149,135,146
+ds2,common_shifted,21,100,110,410,131,149,135,146
+ds3,historical,20,99,115,419,silent,silent,291,silent
+ds3,shifted,21,100,115,419,silent,silent,292,silent
+ds3,common,20,99,110,410,silent,silent,293,silent
+ds3,common_shifted,21,100,110,410,silent,silent,294,silent
+ds7,historical,20,99,150,435,395,392,341,320
+ds7,shifted,21,100,150,435,silent,371,322,305
+ds7,common,20,99,110,410,silent,silent,349,318
+ds7,common_shifted,21,100,110,410,silent,silent,331,303

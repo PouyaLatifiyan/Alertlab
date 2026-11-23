@@ -1,0 +1,8 @@
+monitor,false_alarm,timely
+Off,0,0
+First positive,61/125,551/625
+First two positive,13/125,243/625
+Two consecutive,9/125,189/625
+Three consecutive,1/125,81/625
+First epoch positive,1/5,17/25
+Majority at final,13/125,243/625

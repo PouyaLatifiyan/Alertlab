@@ -1,0 +1,5 @@
+record,upstream_navsol_url,sha256
+cleanStatic,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/cleanStatic/navsol.mat,b62129a8468b2372e8b353037b3bc9eab02b4cd3e4072cde1d4c67d2be3a5966
+ds2,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds2/navsol.mat,317ca9a57aaa6d1fde6f3f9325f002dc49655f6616e1ce53a8cda2d46b43b3ef
+ds3,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds3/navsol.mat,5067660cd12626a1eae36146556c7c1c7b83332fd977d6bdc29ebda20da8d19e
+ds7,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds7/navsol.mat,6b2aa3942b2ca2597f03dfc4796f20c00010940b4055f3a1ca9fd5bfe837ec46

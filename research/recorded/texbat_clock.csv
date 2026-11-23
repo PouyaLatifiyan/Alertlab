@@ -1,0 +1,5 @@
+record,native_rows,first_ORT_s_of_week,last_elapsed_epoch_s,reference_differences,start_elapsed_s,acf1_differences,acf1_squared_centered,endpoint_alarm_elapsed_s,cash_0.5_alarm_elapsed_s,oga_alarm_elapsed_s,restart_alarm_elapsed_s
+cleanStatic,2115,477912.3689969939,423,80,110,0.44188104068697737,0.5989280409979254,silent,silent,202,silent
+ds2,2100,477918.3659940995,420,80,115,0.984914388014998,0.9824653842288467,136,154,140,151
+ds3,2096,477918.3719940995,419,80,115,0.6477156676030075,0.559581342988871,silent,silent,291,silent
+ds7,2175,477912.3689969939,435,80,150,0.6733182678213351,0.5647041791033153,395,392,341,320

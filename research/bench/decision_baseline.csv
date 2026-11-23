@@ -1,0 +1,13 @@
+scenario,hazard_only_choice,hazard_only_alert_lower,original_choice,original_possibly_feasible,with_timeliness_choice,with_timeliness_possibly_feasible
+brief pulse,Shewhart,0.006820884172024017,Shewhart,Shewhart / GLR16,Shewhart,Shewhart
+correlated,GLR16,0.005803968208548018,,,,
+late onset,CUSUM,0.007644849649431814,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+long reference,CUSUM,0.007438070365228296,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+moderate persistent,CUSUM,0.0059386281516393405,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+negative persistent,CUSUM,0.005201942979752107,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+shifted healthy law,CUSUM,0.9269205720160434,,,,
+short reference,CUSUM,0.006412247085276442,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+slow ramp,CUSUM,0.006208839395012197,CUSUM,Shewhart / CUSUM / GLR16 / RankRestart,CUSUM,CUSUM / GLR16
+slow response,GLR16,0.007782979138192142,,,,
+transient drift,CUSUM,0.006073587884099674,CUSUM,CUSUM / GLR16,CUSUM,CUSUM / GLR16
+weak persistent,CUSUM,0.006073587884099674,,,,

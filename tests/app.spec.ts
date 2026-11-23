@@ -1,0 +1,92 @@
+import {test,expect} from '@playwright/test'
+test('every static direct route and refresh loads the app on a project subpath',async({page})=>{
+  const errors:string[]=[]
+  page.on('pageerror',e=>errors.push(e.message))
+  for(const [url,heading] of [['','ALERT Lab'],['framework','Mathematical framework'],['scenarios','Scenario library'],['simulator','Trajectory simulator'],['signals','Signal and state analysis'],['evaluation','Evaluation and selection'],['evidence','Research evidence'],['documentation','Documentation and sources']]){
+    await page.goto(url?url+'/':'./')
+    await expect(page.getByRole('heading',{level:1,name:heading})).toBeVisible()
+    if(url)await page.reload()
+    await expect(page.getByRole('heading',{level:1,name:heading})).toBeVisible()
+  }
+  expect(errors).toEqual([])
+})
+test('scenarios and physical controls produce synchronized changes',async({page})=>{
+  await page.goto('simulator/')
+  await expect(page.locator('.viewport canvas')).toBeVisible()
+  const clock=page.locator('.view-footer span').last()
+  await expect(clock).toHaveText('0.0 s')
+  const state=await page.getByRole('img',{name:'3D position-error norm',exact:true}).locator('path').first().getAttribute('d')
+  await page.getByLabel('East bias drift (m/s)').fill('0.9')
+  await expect(page.getByRole('img',{name:'3D position-error norm',exact:true}).locator('path').first()).not.toHaveAttribute('d',state!)
+  await page.getByRole('slider',{name:'Time cursor'}).press('End')
+  await expect(clock).toHaveText('90.0 s')
+  const chart=page.getByRole('img',{name:'3D position-error norm',exact:true})
+  await chart.scrollIntoViewIfNeeded()
+  const b=(await chart.boundingBox())!
+  await page.mouse.move(b.x+b.width*.5,b.y+b.height*.55)
+  await expect(clock).not.toHaveText('90.0 s')
+  await page.getByLabel('Scenario',{exact:true}).selectOption('jamming')
+  await expect(page.getByRole('img',{name:'GNSS fix availability'})).toBeVisible()
+  await page.getByLabel('Scenario',{exact:true}).selectOption('hybrid')
+  await expect(page.getByLabel('5G update rate (Hz)')).toBeVisible()
+  await page.getByRole('link',{name:'Signals',exact:true}).click()
+  await page.getByLabel('Channel').selectOption('5G east measurement')
+  await expect(page.getByRole('img',{name:'5G east measurement'})).toBeVisible()
+  await page.getByRole('link',{name:'Simulator',exact:true}).click()
+  await expect(page.getByLabel('Scenario',{exact:true})).toHaveValue('hybrid')
+})
+test('benchmark recommendations, abstention and both upload formats',async({page})=>{
+  await page.goto('evaluation/')
+  await page.getByLabel('Validation regime').selectOption('brief pulse')
+  await expect(page.getByRole('heading',{name:'Shewhart',exact:true})).toBeVisible()
+  await page.getByLabel('Healthy false alerts budget (%)').fill('0')
+  await expect(page.getByRole('heading',{name:'No feasible candidate'})).toBeVisible()
+  await page.getByRole('button',{name:'Imported missions'}).click()
+  for(const ext of ['csv','json']){
+    await page.getByLabel('Mission history file').setInputFiles('public/data/example.'+ext)
+    await page.getByRole('button',{name:'Validate and evaluate'}).click()
+    await expect(page.getByRole('status')).toHaveText('8 complete mission-policy histories validated.')
+    await expect(page.getByRole('heading',{name:'Insufficient evidence for certified selection'})).toBeVisible()
+  }
+  await page.getByLabel('Mission history file').setInputFiles({name:'invalid.csv',mimeType:'text/csv',buffer:Buffer.from('x,y\n1,2')})
+  await page.getByRole('button',{name:'Validate and evaluate'}).click()
+  await expect(page.getByRole('alert')).toContainText('Row 1')
+})
+test('desktop hero and mobile simulator render without horizontal page overflow',async({page})=>{
+  await page.goto('./')
+  await expect(page.locator('.viewport canvas')).toBeVisible()
+  await page.screenshot({path:'test-results/home-desktop.png',animations:'disabled'})
+  await page.setViewportSize({width:390,height:844})
+  await page.getByRole('button',{name:'Menu'}).click()
+  await page.getByRole('link',{name:'Simulator',exact:true}).click()
+  await expect(page.getByRole('heading',{name:'Trajectory simulator'})).toBeVisible()
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390)
+  await page.getByRole('button',{name:'Switch to light appearance'}).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme','light')
+  await page.getByRole('heading',{name:'State in 3D'}).scrollIntoViewIfNeeded()
+  await page.screenshot({path:'test-results/simulator-mobile.png',animations:'disabled'})
+})
+
+test('active scenario compares paired model trials in a worker',async({page})=>{
+  await page.goto('simulator/')
+  await page.getByLabel('Scenario',{exact:true}).selectOption('jamming')
+  await page.getByRole('link',{name:'Evaluation',exact:true}).click()
+  await page.getByRole('button',{name:'Active simulation'}).click()
+  await page.getByLabel('Replicates per law').fill('35')
+  await page.getByRole('button',{name:'Run paired missions'}).click()
+  await expect(page.getByRole('button',{name:'Export model comparison'})).toBeVisible()
+  await expect(page.locator('td').filter({hasText:'RankRestart'})).toBeVisible()
+  await page.getByLabel('CUSUM score threshold').fill('12')
+  await expect(page.getByRole('status')).toContainText('Inputs changed')
+})
+
+test('primary sources and input examples are served at the production subpath',async({page,request})=>{
+  await page.goto('documentation/')
+  for(const [name,ext] of [['Manuscript PDF','pdf'],['Mathematical supplement PDF','pdf'],['CSV example','csv'],['JSON example','json'],['JSON Schema','json']]){
+    const href=await page.getByRole('link',{name,exact:true}).getAttribute('href')
+    expect(href).toMatch(new RegExp('^/alert-integrity-framework/data/.*[.]'+ext+'$'))
+    const result=await request.get(href!)
+    expect(result.ok()).toBeTruthy()
+    if(ext==='pdf')expect((await result.body()).subarray(0,5).toString()).toBe('%PDF-')
+  }
+})

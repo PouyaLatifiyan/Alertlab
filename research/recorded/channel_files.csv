@@ -1,0 +1,5 @@
+record,url,sha256
+cleanStatic,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/cleanStatic/channel.mat,4943045923140423d3202e363f9737fae6e2f6af0d2bba02f4f950d62ef07649
+ds2,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds2/channel.mat,69a5dd38fd2c7c87e1ba0d3e7970c384e17c48b3bbe9692dbd607a48ddcb3c1e
+ds3,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds3/channel.mat,c01d49ce6a274fe36c2b8b51c7545c87bd2a9e6d38ff3878479ff5b38f39ae94
+ds7,https://rnl-data.ae.utexas.edu/datastore/texbat/processed/ds7/channel.mat,d6b1f51cd342af9c0d0bf5ae54826282c16a0dd7f2ca648ef44bfc98041543d2
